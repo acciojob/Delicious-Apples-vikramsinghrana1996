@@ -1,72 +1,55 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Varieties - Grocery Store</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <div class="container">
-        <!-- Product Photo Section -->
-        <div class="product__photo">
-            <div class="photo-container">
-                <!-- Main Photo -->
-                <div class="photo-main">
-                    <img id="mainImage" src="green-apple.jpg" alt="Apple Variety">
-                </div>
-                
-                <!-- Photo Album -->
-                <div class="photo-album">
-                    <ul>
-                        <li><img src="green-apple.jpg" alt="Green Apple" onclick="changeImage('green-apple.jpg')"></li>
-                        <li><img src="yellow-apple.jpg" alt="Yellow Apple" onclick="changeImage('yellow-apple.jpg')"></li>
-                        <li><img src="orange-apple.jpg" alt="Orange Apple" onclick="changeImage('orange-apple.jpg')"></li>
-                        <li><img src="red-apple.jpg" alt="Red Apple" onclick="changeImage('red-apple.jpg')"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product Details Section -->
-        <div class="product__details">
-            <h1>Fresh & Organic Apples</h1>
-            
-            <!-- Price -->
-            <div class="price">$7.93 per kg</div>
-
-            <!-- Apple Varieties -->
-            <div class="variant">
-                <h2>Varieties:</h2>
-                <button onclick="changeImage('green-apple.jpg')">Green</button>
-                <button onclick="changeImage('yellow-apple.jpg')">Yellow</button>
-                <button onclick="changeImage('orange-apple.jpg')">Orange</button>
-                <button onclick="changeImage('red-apple.jpg')">Red</button>
+<div class="product">
+    <!-- Product Photo Section -->
+    <div class="product__photo">
+        <div class="photo-container">
+            <!-- Main Photo -->
+            <div class="photo-main">
+                <img id="mainImage" src="green-apple.jpg" alt="Apple Variety">
             </div>
 
-            <!-- Benefits Section -->
-            <div class="description">
-                <h2>BENEFITS</h2>
+            <!-- Photo Album -->
+            <div class="photo-album">
                 <ul>
-                    <li>Rich in fiber, promoting digestive health.</li>
-                    <li>Contains antioxidants that boost immunity.</li>
-                    <li>Good for heart health by reducing cholesterol.</li>
-                    <li>Low in calories, making it great for weight management.</li>
+                    <li><img src="green-apple.jpg" alt="Green Apple" onclick="changeImage('green-apple.jpg')"></li>
+                    <li><img src="yellow-apple.jpg" alt="Yellow Apple" onclick="changeImage('yellow-apple.jpg')"></li>
+                    <li><img src="orange-apple.jpg" alt="Orange Apple" onclick="changeImage('orange-apple.jpg')"></li>
+                    <li><img src="red-apple.jpg" alt="Red Apple" onclick="changeImage('red-apple.jpg')"></li>
                 </ul>
             </div>
-
-            <!-- Add to Cart Button -->
-            <button class="add-to-cart">ADD TO CART</button>
         </div>
     </div>
 
-    <script>
-        function changeImage(image) {
-            document.getElementById('mainImage').src = image;
-        }
-    </script>
+    <!-- Product Details Section -->
+    <div class="product__details">
+        <h1>Fresh & Organic Apples</h1>
 
-</body>
-</html>
+        <!-- Price -->
+        <div class="price">$7.93 per kg</div>
+
+        <!-- Apple Varieties -->
+        <div class="variant">
+            <h2>Varieties:</h2>
+            <ul>
+                <li><img src="green-apple.jpg" alt="Green Apple" onclick="changeImage('green-apple.jpg')"></li>
+                <li><img src="yellow-apple.jpg" alt="Yellow Apple" onclick="changeImage('yellow-apple.jpg')"></li>
+                <li><img src="orange-apple.jpg" alt="Orange Apple" onclick="changeImage('orange-apple.jpg')"></li>
+                <li><img src="red-apple.jpg" alt="Red Apple" onclick="changeImage('red-apple.jpg')"></li>
+            </ul>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="description">
+            <h2>BENEFITS</h2>
+            <ul>
+                <li>Rich in fiber, promoting digestive health.</li>
+                <li>Contains antioxidants that boost immunity.</li>
+                <li>Good for heart health by reducing cholesterol.</li>
+                <li>Low in calories, making it great for weight management.</li>
+            </ul>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+</div>
+
